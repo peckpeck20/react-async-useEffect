@@ -7,7 +7,7 @@ const App = () => {
     const fetchQuote = async () => {
       try {
         const response = await fetch(
-          "http://swquotesapi.digitaljedi.dk/api/SWQuote/RandomStarWarsQuote"
+          "https://swquotesapi.digitaljedi.dk/api/SWQuote/RandomStarWarsQuote"
         );
         const data = await response.json();
         setstate(data);
